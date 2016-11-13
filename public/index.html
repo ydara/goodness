@@ -35,7 +35,7 @@
 					<p>By HTML5 UP</p>
 				</header>
 				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Generate a Good Deed</a>
+					<button onclick="myFunction()" href="#banner" class="button style2 scrolly-middle";>Press Here To Generate a Good Deed</button>
 				</footer>
 			</section>
 
@@ -43,20 +43,28 @@
 			<section id="banner">
 				<header>
 					<h2 id="deed"></h2>
-          <script>
-            function myFunction() {
-                var deedList = [
-                                "Talk to Starnger",
-                                "Buy someones food."
-                               ]
-              return deedList[0];
-            }
-            document.getElementById("deed").innerHTML = myFunction();
-          </script>
 				</header>
-				<p></p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Act on this message</a>
+					<a href="#first" class="button style2 scrolly">Click Here To Upload Your Deed!</a>
+					<script>
+						function myFunction(){
+						    var deedList = [
+                                "Item0",
+                                "Item1",
+								"Item2",
+								"Item3",
+								"Item4",
+								"Item5",
+								"Item6",
+								"Item7",
+								"Item8"
+                               ];
+							var randomNumber = Math.floor(Math.random()*deedList.length);
+							return deedList[randomNumber];
+							
+						}
+						document.getElementById("deed").innerHTML = myFunction();
+					</script>
 				</footer>
 			</section>
 
