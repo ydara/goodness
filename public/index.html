@@ -43,8 +43,22 @@
 			<section id="banner">
 				<header>
 					<h2 id="deed"></h2>
+<<<<<<< HEAD
+=======
+          <script>
+            function myFunction() {
+                var deedList = [
+                                "Talk to Stranger",
+                                "Buy someones food."
+                               ]
+              return deedList[0];
+            }
+            document.getElementById("deed").innerHTML = myFunction();
+          </script>
+>>>>>>> dbc12f5aec6272475bde4f420dca5500e780c0e1
 				</header>
 				<footer>
+<<<<<<< HEAD
 					<a href="#first" class="button style2 scrolly">Click Here To Upload Your Deed!</a>
 					<script>
 						function myFunction(){
@@ -65,6 +79,14 @@
 						}
 						document.getElementById("deed").innerHTML = myFunction();
 					</script>
+=======
+					<a id="upload" class="button style2 scrolly">Act on this message</a>
+          <script type="text/javascript">
+          document.getElementById("upload").onclick = function () {
+          location.href = "upload.html";
+            };
+          </script>
+>>>>>>> dbc12f5aec6272475bde4f420dca5500e780c0e1
 				</footer>
 			</section>
 
