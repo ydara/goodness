@@ -46,7 +46,7 @@
           <script>
             function myFunction() {
                 var deedList = [
-                                "Talk to Starnger",
+                                "Talk to Stranger",
                                 "Buy someones food."
                                ]
               return deedList[0];
@@ -56,7 +56,12 @@
 				</header>
 				<p></p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Act on this message</a>
+					<a id="upload" class="button style2 scrolly">Act on this message</a>
+          <script type="text/javascript">
+          document.getElementById("upload").onclick = function () {
+          location.href = "upload.html";
+            };
+          </script>
 				</footer>
 			</section>
 
